@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CFDB8CC-E27E-483C-8CA1-22B530207B8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Immigration_Management_Systems</RootNamespace>
+    <AssemblyName>Immigration_Management_Systems</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCountry.Designer.cs">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImmigrantInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImmigrantInsert.Designer.cs">
+      <DependentUpon>frmImmigrantInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImmigrantUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImmigrantUpdateDelete.Designer.cs">
+      <DependentUpon>frmImmigrantUpdateDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImmigrantView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImmigrantView.Designer.cs">
+      <DependentUpon>frmImmigrantView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImmigrationOffce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImmigrationOffce.Designer.cs">
+      <DependentUpon>frmImmigrationOffce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficerInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficerInsert.Designer.cs">
+      <DependentUpon>frmOfficerInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficerView.Designer.cs">
+      <DependentUpon>frmOfficerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfiicerUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfiicerUpdateDelete.Designer.cs">
+      <DependentUpon>frmOfiicerUpdateDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassport.Designer.cs">
+      <DependentUpon>frmPassport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransport.Designer.cs">
+      <DependentUpon>frmTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserSignUp.Designer.cs">
+      <DependentUpon>frmUserSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisa.Designer.cs">
+      <DependentUpon>frmVisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="immigrantDetaile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="immigrantDetaile.Designer.cs">
+      <DependentUpon>immigrantDetaile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImmigrationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImmigrationDetails.Designer.cs">
+      <DependentUpon>ImmigrationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImmigrationIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImmigrationIn.Designer.cs">
+      <DependentUpon>ImmigrationIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImmigrationInformationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImmigrationInformationReport.Designer.cs">
+      <DependentUpon>ImmigrationInformationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportOfImmigration.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOfImmigration.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptImmigrationInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptImmigrationInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCountry.resx">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImmigrantInsert.resx">
+      <DependentUpon>frmImmigrantInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImmigrantUpdateDelete.resx">
+      <DependentUpon>frmImmigrantUpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImmigrantView.resx">
+      <DependentUpon>frmImmigrantView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImmigrationOffce.resx">
+      <DependentUpon>frmImmigrationOffce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficerInsert.resx">
+      <DependentUpon>frmOfficerInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficerView.resx">
+      <DependentUpon>frmOfficerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfiicerUpdateDelete.resx">
+      <DependentUpon>frmOfiicerUpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassport.resx">
+      <DependentUpon>frmPassport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransport.resx">
+      <DependentUpon>frmTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserSignUp.resx">
+      <DependentUpon>frmUserSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisa.resx">
+      <DependentUpon>frmVisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="immigrantDetaile.resx">
+      <DependentUpon>immigrantDetaile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImmigrationDetails.resx">
+      <DependentUpon>ImmigrationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImmigrationInformationReport.resx">
+      <DependentUpon>ImmigrationInformationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportOfImmigration.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOfImmigration.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptImmigrationInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptImmigrationInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_427651327_Gcld6EgL7PFecF7eylu3ZOBrhJiMFQfL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_213648845_yIkKPrLdQn3Sr0rVgnsV0tSiYr43ZVdN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_510754407_u7dH3l3aOLqI0Xd3TvdYHQq4brfS8X4i.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_418333336_ErUiFjzzRztdZjjomPohpFWrVVKG9OwD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_415540132_eeaKlIecOj6ZSRpOdQkngYtub6uCCZgg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_215517687_MLMCHbyaOb5z8OBffOUw6ASwXDTfjV5v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_346453480_0Y5yZEQhkwzYnmktObN3oF3pnuuO7oCy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Immigration Details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImmigrationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employyee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImmigrationDetals.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImmigrantOffice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\others.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\others1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImmigrationDetals1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImmigrationDetals2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMMIGRANTS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImmigrantOffice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\officeLocation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageUpload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rpt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rpty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
